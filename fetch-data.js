@@ -14,6 +14,7 @@ async function fetchUserData () {
     });
     dataContainer.appendChild(userList);
   } catch(error) {
+    dataContainer.innerHTML = '';
     dataContainer.innerHTML = 'Failed to load use data';
   }
 };
